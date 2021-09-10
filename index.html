@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 
 <!-- Aframe set up -->
+
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"> </script>
     <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
@@ -18,21 +19,45 @@
 
 
   <body>
+
+
+
 <!-- Scene start -->
  <a-scene> 
 
+<!-- Sky -->
+
+ <a-sky src="sky/Sky.jpg"> </a-sky>
+
 <!-- Walls --> 
 
+<a-plane color="brown" position="0 0.7 13.5" rotation="-180 0 -180"  scale="18 2.5 18"> </a-plane>
+
+<a-plane color="brown" position="0 0.7 -9"  scale="18 2.5 18"> </a-plane>
+
+<a-plane color="brown" position="3 0.7 0" scale="18 2.5 18" material="color:brown" geometry="primitive:plane" rotation="0 -90 0"> </a-plane>
+
+<a-plane color="brown" position="-9 0.7 0" scale="18 2.5 18" material="color:brown" geometry="primitive:plane" rotation="0 90 0"> </a-plane>
+
+
+<!-- curved walls -->
+
+<a-plane color="brown" position="2 0.7 -1.8" scale="4 2.5 18" material="color:brown" geometry="primitive:plane" rotation="0 -60 0"> </a-plane>
+
+<a-plane color="brown" position="-0.15 0.7 -4.9" scale="4 2.5 18" material="color:brown" geometry="primitive:plane" rotation="0 -50 0"> </a-plane>
+
+<a-plane color="brown" position= "-2.999999999 0.7 -7.9" scale="4 2.5 18" material="color:brown" geometry="primitive:plane" rotation="0 -40 0"> </a-plane>
 
 <!-- Flooring -->
-  <a-plane color="brown" position="0 0 0" material="color:brown" geometry="primitive:plane" > </a-plane>
+
+<a-plane color="green" position="0 0 0" rotation="-90 0 0" scale="18 27 18"> </a-plane>
+
+<!-- Objects and Models  --> 
 
 
-<!-- Objects and Models  -->
 
 
-
- </a-scene>
+</a-scene>
 <!-- Scene end -->
     <script src="script.js"></script>
 
