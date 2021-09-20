@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -56,19 +57,41 @@
 
 <a-plane position= "-2.999999999 0.7 12" scale="5 4 18"  geometry="primitive:plane" rotation="0 40 0" side="double" src="Images/Brick.jpg"> </a-plane>
 
+<!-- Gate -->
+
+<a-plane  position="2 0.7 -2.6" scale="2 4 5" geometry="primitive:plane" rotation="0 0 0" side="double" src="Images/Brick.jpg"> </a-plane>
+
+<a-plane  position="2 0.7 2.6" scale="2 4 5" geometry="primitive:plane" rotation="0 0 0" side="double" src="Images/Brick.jpg"> </a-plane>
+
 <!-- Flooring -->
 
-<a-plane color="green" position="0 0 0" rotation="-90 0 0" scale="18 27 18"> </a-plane>
+<a-plane position="0 0 0" rotation="-90 0 0" scale="18 27 18" src="Images/Leaf.jpg"> </a-plane>
 
 <!-- Objects and Models  --> 
 
-<a-gltf-model id="Pine" position="-2 0 -10" rotation="-180 0 0" src="Models/Pine.glb" scale=" -1 -1 -1"> </a-gltf-model> 
 
-<a-gltf-model id="Pine" position="-2 0 10" rotation="-180 0 0" src="Models/Pine.glb" scale=" -1 -1 -1"> </a-gltf-model> 
-
-<a-gltf-model id="Tower" position=" 0 0 0" src="Models/Tower.glb"> </a-gltf-model> 
+<!-- Pine Trees --> 
 
 
+<a-gltf-model id="Pine" position="-3.494 0.1 10.449" rotation="-180 0 0" src="Models/Pine.glb" scale=" -1 -1 -1"> </a-gltf-model> 
+
+<a-gltf-model id="Pine" position="-2.882 0.1 -7.628" rotation="-180 0 0" src="Models/Pine.glb" scale=" -1 -1 -1"> </a-gltf-model> 
+
+<a-gltf-model id="Pine" position="-2.6 0.1 2.8" rotation="-180 0 0" src="Models/Pine.glb" scale=" -1 1 -1"> </a-gltf-model> 
+
+<!-- towers -->
+
+<a-gltf-model id="Tower" position=" 2.425 0.1 -3.720" rotation="0 -77.283 0" src="Models/Tower.glb"> </a-gltf-model> 
+
+<a-gltf-model id="Tower" position=" 2.517 0.1 3.720" rotation="0 -77.283 0" src="Models/Tower.glb"> </a-gltf-model> 
+
+<a-gltf-model id="Tower" position=" -1.6 0.1 -10.8" rotation="0 -77.283 0" src="Models/Tower.glb"> </a-gltf-model> 
+
+<a-gltf-model id="Tower" position=" -1.6 0.1 10.8" rotation="0 -77.283 0" src="Models/Tower.glb"> </a-gltf-model> 
+
+<!-- Gate model -->
+
+<a-gltf-model id="Gate" position="0.835 1.401 -0.029" rotation="0 0 0" src="Models/Gate.glb" scale="4.684 4.684 7.663"> </a-gltf-model> 
 
 
 </a-scene>
