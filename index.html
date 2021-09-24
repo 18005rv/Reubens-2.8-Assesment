@@ -26,6 +26,17 @@
 <!-- Scene start -->
  <a-scene> 
 
+<!-- entitys -->
+
+<a-entity id="camera" rotation=" 0 -90 0 " position="-7 1.5 0"  camera look-controls wasd-controls> 
+ <a-entity cursor="rayOrigin: mouse"> </a-entity>
+</a-entity>
+
+
+<!-- Click Play box -->
+
+<a-entity disappear id="distext" position=" 0.711 1.2 0 " rotation=" 0 -90 0 "  material="color: black" geometry="primitive: plane; width: 1; height: 0.5" text="value: Play; width: 6; height: 6; align: center"> </a-entity>
+
 <!-- Sky -->
 
  <a-sky src="sky/Sky.jpg"> </a-sky>
@@ -68,6 +79,19 @@
 <a-plane position="0 0 0" rotation="-90 0 0" scale="18 27 18" src="Images/Leaf.jpg"> </a-plane>
 
 <!-- Objects and Models  --> 
+
+<!-- Camp Fire -->
+
+<a-gltf-model id="CampFire" position="-4.340 0.200 -3.303" rotation="0 0 0" src="Models/Camp.glb" scale=" 0.200 0.200 0.200"> </a-gltf-model>
+
+<!-- Path -->
+
+<a-gltf-model id="Path" position="-1.935 -0.206 2.298" rotation="0 0 0" src="Models/Path.glb" scale=" 1.197 1 1"> </a-gltf-model>
+
+
+<!-- Tent -->
+
+<a-gltf-model id="Tent" position="-3.708 0.537 3.032" rotation="0 -45.161 0" src="Models/Tent.glb" scale=" 1 1 1"> </a-gltf-model>
 
 
 <!-- Pine Trees --> 
