@@ -9,5 +9,3 @@ init: function () {
  this.el.addEventListener('click', disappearfunc);
 
 }});
-
-// start here
